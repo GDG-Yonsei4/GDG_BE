@@ -1,0 +1,39 @@
+{
+  "id": "test-user",
+  "summaries": {
+    "example-subject": {
+      "summary": "이 테스트용 노트는 핵심 개념 A와 B에 대한 설명과 간단한 자바스크립트 예제 코드를 포함하고 있습니다. 학습 계획은 개념 복습, 예제 코드 구현, 그리고 연습 문제 풀이로 구성되어 있습니다.",
+      "key_concepts": [
+        "핵심 개념 A",
+        "핵심 개념 B"
+      ],
+      "code_examples": [
+        "function add(a, b) {\n  return a + b;\n}"
+      ],
+      "plan": [
+        {
+          "step": "개념 A 복습",
+          "duration_minutes": 30,
+          "resources": [
+            "노트"
+          ]
+        },
+        {
+          "step": "예제 코드 따라 구현",
+          "duration_minutes": 20,
+          "resources": [
+            "노트"
+          ]
+        },
+        {
+          "step": "연습 문제 3개 풀기",
+          "duration_minutes": 30,
+          "resources": [
+            "노트"
+          ]
+        }
+      ],
+      "difficulty": "beginner"
+    }
+  }
+}
