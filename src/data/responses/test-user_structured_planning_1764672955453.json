@@ -1,0 +1,294 @@
+{
+  "id": "test-user",
+  "plans": {
+    "NLP": {
+      "summary": "[Ch1. Data representation (part2).pdf] 이 강의에서는 자연어 처리(NLP)에서 데이터 표현에 대한 중요한 개념들을 다룹니다. 특히, 원-핫 인코딩의 한계와 차원 축소, 오토인코더, 그리고 Word2Vec에 대해 배웁니다.\n\n[Ch1. Data representation.pdf] 이 자료는 자연어 처리(NLP)에 대한 학습을 위한 자료로, 데이터 표현, 기계 학습, 신경망, 손실 최적화, 순환 신경망(RNN), 그리고 장단기 메모리(LSTM)에 대한 개념을 다룹니다. 이를 통해 학습자는 NLP의 기본적인 개념과 신경망의 작동 원리를 이해하고, Pytorch를 사용한 실제 코드 예제를 통해 이론을 실제로 적용하는 방법을 배울 수 있습니다.\n\n[Ch2. Text Understanding.pdf] 이 과목은 자연어 처리(NLP)의 주요 개념과 기법에 대해 다룹니다. 텍스트 분류, 감정 분석, 문법 정확성, 텍스트 유사성, 자연어 추론 등의 주제를 다루며, GLUE 및 KLUE 벤치마크에 대한 이해를 돕습니다. 또한, 기계가 텍스트를 이해하고 질문에 답하는 방법에 대한 주요 아이디어와 기법을 소개합니다.\n\n[Ch4. Transformers.pdf] 이 과정에서는 Transformer, 언어 모델, 그리고 이를 기반으로 한 NLP 기술에 대해 학습합니다. Transformer의 개념과 작동 방식, 그리고 이를 활용한 언어 모델링 방법에 대해 배우게 됩니다. 또한, ELMo, GPT, BERT와 같은 Transformer 기반 언어 모델에 대해 학습하고, 이들 모델의 차이점과 각각의 활용 방법에 대해 이해하게 됩니다.\n\n[NLP Tutorial.pdf] 이 자료는 자연어 처리(NLP)에 대한 튜토리얼로, 기계 학습부터 순차적 모델링, 트랜스포머와 언어 모델, 대화 모델에 이르기까지 다양한 주제를 다룹니다.",
+      "key_concepts": [
+        "원-핫 인코딩",
+        "차원의 저주",
+        "차원 축소",
+        "오토인코더",
+        "Word2Vec",
+        "데이터 표현",
+        "기계 학습",
+        "신경망",
+        "손실 최적화",
+        "순환 신경망(RNN)",
+        "장단기 메모리(LSTM)",
+        "텍스트 분류",
+        "감정 분석",
+        "문법 정확성",
+        "텍스트 유사성",
+        "자연어 추론",
+        "GLUE 벤치마크",
+        "KLUE 벤치마크",
+        "기계 독해",
+        "질문 응답",
+        "Transformer",
+        "언어 모델",
+        "ELMo",
+        "GPT",
+        "BERT",
+        "순차적 모델링",
+        "트랜스포머와 언어 모델",
+        "대화 모델"
+      ],
+      "code_examples": [
+        "Pytorch를 사용한 신경망 구현 예제"
+      ],
+      "plan": [
+        {
+          "big_todo": "원-핫 인코딩 이해하기",
+          "small_todos": [
+            {
+              "todo": "원-핫 인코딩의 정의와 사용 예시를 이해하고 복습하기",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation (part2).pdf"
+            },
+            {
+              "todo": "원-핫 인코딩의 한계점인 차원의 저주와 직교성에 대해 이해하고 복습하기",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation (part2).pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "차원 축소와 오토인코더 이해하기",
+          "small_todos": [
+            {
+              "todo": "차원 축소의 개념과 PCA, LDA 등의 방법에 대해 이해하고 복습하기",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation (part2).pdf"
+            },
+            {
+              "todo": "오토인코더의 개념과 작동 원리에 대해 이해하고 복습하기",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation (part2).pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "Word2Vec 이해하기",
+          "small_todos": [
+            {
+              "todo": "Word2Vec의 개념과 작동 원리에 대해 이해하고 복습하기",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation (part2).pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "데이터 표현 및 기계 학습 이해",
+          "small_todos": [
+            {
+              "todo": "데이터 표현에 대한 이해",
+              "duration_minutes": 30,
+              "reference": "Ch1. Data representation.pdf"
+            },
+            {
+              "todo": "기계 학습의 기본 개념 학습",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "신경망 및 손실 최적화 이해",
+          "small_todos": [
+            {
+              "todo": "신경망의 기본 구조 및 작동 원리 이해",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            },
+            {
+              "todo": "손실 최적화 방법론 이해",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "순환 신경망(RNN) 및 장단기 메모리(LSTM) 이해",
+          "small_todos": [
+            {
+              "todo": "순환 신경망(RNN)의 개념 및 작동 원리 이해",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            },
+            {
+              "todo": "장단기 메모리(LSTM)의 개념 및 작동 원리 이해",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "Pytorch를 사용한 실제 코드 예제 학습",
+          "small_todos": [
+            {
+              "todo": "Pytorch를 사용한 신경망 구현 예제 학습",
+              "duration_minutes": 60,
+              "reference": "Ch1. Data representation.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "텍스트 이해의 기본 개념 학습",
+          "small_todos": [
+            {
+              "todo": "텍스트 분류에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "감정 분석에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "문법 정확성에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "텍스트 유사성에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "자연어 추론에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "벤치마크 학습",
+          "small_todos": [
+            {
+              "todo": "GLUE 벤치마크에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "KLUE 벤치마크에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "기계 독해 및 질문 응답 학습",
+          "small_todos": [
+            {
+              "todo": "기계 독해에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            },
+            {
+              "todo": "질문 응답에 대한 이해",
+              "duration_minutes": 60,
+              "reference": "Ch2. Text Understanding.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "Transformer 이해하기",
+          "small_todos": [
+            {
+              "todo": "Transformer의 개념과 작동 방식 학습하기",
+              "duration_minutes": 60,
+              "reference": "Ch4. Transformers.pdf"
+            },
+            {
+              "todo": "Self-Attention, Multi-head Attention, Positional Encoding 등 Transformer의 주요 구성 요소 이해하기",
+              "duration_minutes": 60,
+              "reference": "Ch4. Transformers.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "Transformer 기반 언어 모델 학습하기",
+          "small_todos": [
+            {
+              "todo": "ELMo, GPT, BERT의 개념과 차이점 이해하기",
+              "duration_minutes": 60,
+              "reference": "Ch4. Transformers.pdf"
+            },
+            {
+              "todo": "각 모델의 학습 방법과 활용 방법 학습하기",
+              "duration_minutes": 60,
+              "reference": "Ch4. Transformers.pdf"
+            },
+            {
+              "todo": "Transformer 기반 언어 모델의 활용 사례 및 성능 비교하기",
+              "duration_minutes": 60,
+              "reference": "Ch4. Transformers.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "기계 학습 이해하기",
+          "small_todos": [
+            {
+              "todo": "데이터셋과 모델의 개념 이해하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            },
+            {
+              "todo": "성능 측정과 최적화에 대해 학습하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "순차적 모델링 학습하기",
+          "small_todos": [
+            {
+              "todo": "원-핫 벡터/인코딩 이해하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            },
+            {
+              "todo": "RNN(Recurrent Neural Network)에 대해 학습하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "트랜스포머와 언어 모델 이해하기",
+          "small_todos": [
+            {
+              "todo": "트랜스포머의 개념과 작동 방식 이해하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            },
+            {
+              "todo": "BERT와 같은 언어 모델에 대해 학습하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            }
+          ]
+        },
+        {
+          "big_todo": "대화 모델 학습하기",
+          "small_todos": [
+            {
+              "todo": "페르소나 기반 대화와 지식 기반 대화 이해하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            },
+            {
+              "todo": "감정 지원 대화와 기계 상식에 대해 학습하기",
+              "duration_minutes": 30,
+              "reference": "NLP Tutorial.pdf"
+            }
+          ]
+        }
+      ],
+      "difficulty": "intermediate"
+    }
+  }
+}
