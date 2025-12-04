@@ -35,13 +35,13 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo docker-compose down
+            docker-compose down
 
             # 3. 최신 이미지 당겨오기 (Pull)
-            sudo docker-compose pull
+            docker-compose pull
 
             # 4. 백그라운드 실행 (Up)
-            sudo docker-compose up -d
+            docker-compose up -d
 
             # 5. 사용하지 않는 이미지 정리 (Prune)
-            sudo docker image prune -f
+            docker image prune -f
