@@ -20,9 +20,11 @@ app.use(express.json());
 // routers
 const healthRouter = require('./features/health/health.routes');
 const planningRouter = require('./features/planning/planning.routes');
+const uploadRouter = require('./features/upload/route');
 
 app.use('/', healthRouter);
 app.use('/api', planningRouter);
+app.use('/api/upload', uploadRouter); 
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

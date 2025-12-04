@@ -1,9 +1,17 @@
-# dependencies
-node_modules/
-
-# local env files
+# Environment
 .env
 nlp/
+
+# Google Cloud Key
+service-account.json
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
 .env.local
 .env.docker
 
