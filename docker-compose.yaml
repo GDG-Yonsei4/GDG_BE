@@ -1,0 +1,32 @@
+services:
+  # 1. 우리 백엔드 서버 (Node.js)
+  backend:
+    build:
+      context: .
+      dockerfile: .dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./.env.docker
+    depends_on:
+      db:
+        condition: service_healthy
+      
+
+  # 2. MySQL 데이터베이스
+  db:
+    image: mysql:8.0
+    platform: linux/amd64 # 맥(M1/M2) 호환성 위해 추가하면 좋음
+    restart: always
+    env_file:
+      - ./.env.docker
+    ports:
+      - "3306:3306"
+    volumes:
+      # 컨테이너를 껐다 켜도 데이터가 날아가지 않게 로컬 폴더에 저장
+      - ./mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
